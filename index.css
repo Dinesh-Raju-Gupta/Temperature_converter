@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    background-color: #dee611;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="number"], select, input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #c50808;
+    border-radius: 3px;
+}
+input[type="button"] {
+    background-color: #007BFF;
+    color: #2006cd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="button"]:hover {
+    background-color: #0056b3;  
+}
+#result {
+    background-color: #ef9192;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+

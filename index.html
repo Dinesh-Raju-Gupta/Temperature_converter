@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <form method="get">
+        Enter Temprature<input type="number" id="temp" placeholder="Temprature">
+        <select id="differentunits">
+            <option></option>
+            <option value="kelvin">Kelvin</option>
+            <option value="farh">Farhenite</option>
+        </select>
+   
+        <input type="Button" value="Click" onclick="userinput()"><br/><br/>
+        <input type="number" id="result" readonly>
+    </form>
+    <script language="javascript">
+        function userinput()
+        {
+            var temp;
+            var kel=0;
+            var farh=0;
+            temp=parseFloat(document.getElementById("temp").value);
+            var selectElement = document.getElementById("differentunits");
+            var selectedValue = selectElement.value;
+            if(selectedValue == "kelvin")
+            {
+                kel=temp+273.15;
+                document.getElementById("result").value=kel;
+            }
+            if(selectedValue == "farh")
+            {
+                farh=temp*(9/5)+32;
+                document.getElementById("result").value=farh;
+            }
+        }
+    </script>
+</body>
+</html>
